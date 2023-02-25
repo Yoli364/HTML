@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eS">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAS Y FORMULARIOS</title>
+</head>
+<body style="background-color:coral;">
+<header>
+    <img src="img/incap.jpeg" width="100" height="100" alt="incap">
+    <h1>LISTAS EN HTML</h1>
+    <H2>MENU NAVEGACION</H2>
+</header>
+<nav>
+    <ul>
+        <li type="disc" style="color: red;">Home</li>
+        <li type="square">Productos</li>
+        <li type="circle">Servicios</li>
+        <li>Contacto</li>
+    </ul>
+</nav>
+<section>
+    <!-- Method GET pasas los datos por la url, atravez de parametros//Method POST pasa los datos de forma iterna(no se ve) -->
+    <form action="datos.php" method="post"></form>
+    <!-- seccion de marco de formulario -->
+    <fieldset>
+        <!-- seccion de ingreso de nombre -->
+        <label >Nombre Completo</label>
+        <input name="nombre" type="text" placeholder="Ingrsese Su Nombre Completo" required>
+        <br><br>
+
+        <!--Seccion email  -->
+        <label>E-mail:</label>
+        <input name="email" type="email" placeholder="Ingrese su Email" required="">
+        <br><br>
+
+        <!-- seccion contraseña -->
+        <label>Contraseña</label>
+        <input name="contraseña" type="password" aria-placeholder="Ingrese su Contraseña" required="">
+        <br><br>
+
+        <!-- seccion Hobbies -->
+        <label>Selecciona Tus Hobbies:
+        </label>
+        <br>
+        <input name="cine" type="checkbox">Cine<br>
+        <input name="Lectura" type="checkbox">Lectura<br>
+        <input name="Deporte" type="checkbox">Deporte<br>
+        <br>
+        <br>
+
+        <!-- Estado Civil -->
+
+        <label>Estado Civil:</label><br>
+        <input name="estcivil" type="radio" value="Casado">Casado(a)<br>
+        <input name="estcivil" type="radio" value="Soltero">Soltero(a)<br>
+        <input name="estcivil" type="radio" value="viudo">Viudo(a)<br>
+        <br>
+        <br>
+
+        <!-- Seleccionar Opcion Lista -->
+        <label>Programas Tecnicos:</label>
+        <select name="select">
+        <option>Seleccionar programa ...</option>   
+        <option>Sistemas</option>   
+        <option>Diseño Grafico</option>   
+        <option>Contabilidad</option>   
+        </select>
+        <br>
+        <br>
+        <label>Tu Comentario:</label><br>
+        <textarea name="mensaje" rows="s" cols="40"></textarea>
+        </fieldset>
+        <br><br>
+        <!-- seccion de botones formulario submit : enviar datos cancel: borrar datos ingresados -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+        <br>
+        <br>
+        </form>
+</section>
+<!-- seccion pie de pagina -->
+<footer>
+    Derecho Reservados &copy;2022&#64;Nombre STD
+</footer>
+</body>
+</html>
